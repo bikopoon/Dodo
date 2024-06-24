@@ -1,4 +1,3 @@
-
 const fs = require("fs-extra");
 if (fs.existsSync(".env"))
   require("dotenv").config({ path: __dirname + "/.env" });
@@ -42,13 +41,13 @@ global.scan = "https://byte-session.vercel.app/";
 
 global.SESSION_ID =
   process.env.SESSION_ID ||
-  ""
+  "Byte;;;eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiSUo4TjVDM3FiOERFbStnYjg5WEZrZUpRZktnRnZPMzdpNUdHajRFZnpsbz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQXN0Y1NyN0J2a2RrdW45UWpOREVQUU9HZ2t1OTdnMGZIbll0YkpabGNRZz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJvSE9rZk5xT2w0dGF2dm1XZ0ZNczdtR2tZTTdxN3VmcE5QcGRQUXoxaTI4PSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJUWHpLZFp1QkxkeE00TmMzVzAwbmdpZmozbVdHWGs5Z29UN01hRzQzUGtBPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IktPcnRUWEJGSmRUczRFNWFwWVJTd2JvV1NSeHRSbnVabjJsVTJ2TWszVTg9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InBCMFpQOW9TSHlFMjR0OS83NHp1V09zY05CdlUxckpjcGx5Unk1YjRFeU09In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoibUkxcHk1eC85blZNZTgxQ0I0Q2pYTkplcXNCNXVUUzA1YmIyVUVUQ09rQT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiN2hrNVJJWkZpaEhSUS9mZGhsa0YvcG5HdWlRNEdBZ2tKK2tuNUE5ZVhqYz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImZTZVRpbzR6QUcxNnZIVHQzclYrSXp6ZFBqdXAvVmtLMGdibnozVVFxUjdEcmdsS2hRcUVGRDR2TFZkSy9vd094YmZBNWdwNHJsSGVxdlpyMmFDbWpRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTY2LCJhZHZTZWNyZXRLZXkiOiJiNWx2N01MVXlmQmZUbkpndEcvOGlvR1ExQzNkKzBFdlM1dm9FWTNQZGtZPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQi"
 module.exports = {
   menu: process.env.MENU || "",
   HANDLERS: process.env.PREFIX || "*",
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "1.0.0",
-  caption: process.env.CAPTION || "*Powered By ismail*",
+  caption: process.env.CAPTION || "Powered By ismail",
   author: process.env.PACK_AUTHER || "Ismail kourejo",
   packname: process.env.PACK_NAME || "♥️",
   botname: process.env.BOT_NAME || "BYTE-MD",
